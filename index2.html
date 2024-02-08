@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Page</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<style>
-  /* Since Tailwind is utility-first, custom styles are applied using inline styles or additional classes */
-  .custom-bg {
-    background-image: url('https://placehold.co/1920x1080?text=Background+Image&fontsize=25');
-    background-size: cover;
-    background-position: center;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyauto 2024</title>
+  <link rel="stylesheet" href="./css/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
-<body class="custom-bg font-roboto">
-<div class="container mx-auto px-4">
-  <header class="flex justify-between items-center py-4">
-    <!-- Logo and Navigation goes here -->
-  </header>
 
-  <!-- Main content and sidebar goes here -->
-  <div class="text-white">
-    <h1 class="text-5xl font-bold mb-6">КЛЮЧАВТО – ведущий мультибрендовый автомобильный холдинг России</h1>
-    <div class="grid grid-cols-2 gap-4 mb-8">
-      <div class="p-4 bg-white bg-opacity-25">
-        <p class="text-3xl font-bold">20 лет+</p>
-        <p>многолетняя история</p>
+<body>
+  <section class="hero">
+    <div class="hero__video">
+      <video autoplay muted loop playsinline>
+        <!-- Постер для десктопных устройств -->
+        <picture>
+          <source srcset="./img/video/1.jpg" media="(min-width: 768px)">
+          <img src="./img/video/1-375.jpg" alt="Постер видео">
+        </picture>
+
+        <!-- Источник видео для всех устройств -->
+        <source src="./video/2.mp4" type="video/mp4">
+        УПС, Ваш браузер не поддерживает тег video
+      </video>
+    </div>
+    <div class="wrapper">
+      <div class="hero__flex">
+        <div class="hero__header">
+          <img src="./img/header.svg" alt="">
+          
+        </div>
+        <div class="hero__body">
+          <img src="./img/hero-text.svg" alt="">
+        </div>
       </div>
-      <!-- Other stats elements go here -->
     </div>
-
-    <!-- Carousel goes here -->
-    <div class="flex items-center gap-4 mb-8">
-      <!-- Carousel items go here -->
+  </section>
+  <section class="two">
+    <div class="wrapper">
+      <div class="two__body">
+        <img src="./img/footer.svg" alt="">
+      </div>
     </div>
+  </section>
 
-    <!-- Footer goes here -->
-  </div>
-</div>
-<script>
-  // Your JavaScript goes here
-</script>
 </body>
+
 </html>
